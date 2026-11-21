@@ -1,30 +1,16 @@
-- repo: ubi_8
-  subrepo: appstream
-  srcname: hicolor-icon-theme
-  visiblename: hicolor-icon-theme
-  version: "0.17"
-  origversion: 0.17-2.el8
-  status: outdated
-  summary: Basic requirement for icon themes
-  licenses:
-    - GPLv2+
-  categories:
-    - Unspecified
-- repo: openkylin_3_0
-  subrepo: huanghe-proposed/main
+- repo: apertis_v2026
+  subrepo: v2026/target
   srcname: hicolor-icon-theme
   binnames:
     - hicolor-icon-theme
   visiblename: hicolor-icon-theme
   version: "0.18"
-  origversion: 0.18-ok1
+  origversion: 0.18-2+apertis1
   status: newest
   maintainers:
-    - packaging@lists.openkylin.top
+    - pkg-gnome-maintainers@lists.alioth.debian.org
     - bigon@debian.org
     - jbicha@ubuntu.com
-  categories:
-    - misc
 - repo: adelie_current
   subrepo: user
   srcname: hicolor-icon-theme
@@ -142,6 +128,21 @@
     - ncopa@alpinelinux.org
   licenses:
     - GPL-2.0-or-later
+- repo: parrot
+  subrepo: parrot-updates/main
+  srcname: hicolor-icon-theme
+  binnames:
+    - hicolor-icon-theme
+  visiblename: hicolor-icon-theme
+  version: "0.18"
+  origversion: 0.18-2
+  status: newest
+  maintainers:
+    - pkg-gnome-maintainers@lists.alioth.debian.org
+    - bigon@debian.org
+    - jbicha@ubuntu.com
+  categories:
+    - misc
 - repo: alpine_3_22
   subrepo: main
   srcname: hicolor-icon-theme
@@ -289,19 +290,15 @@
     - bigon@debian.org
     - jbicha@debian.org
     - joss@debian.org
-- repo: apertis_v2026
-  subrepo: v2026/target
+- repo: pclinuxos
   srcname: hicolor-icon-theme
-  binnames:
-    - hicolor-icon-theme
   visiblename: hicolor-icon-theme
   version: "0.18"
-  origversion: 0.18-2+apertis1
+  origversion: 0.18-1pclos2026
   status: newest
-  maintainers:
-    - pkg-gnome-maintainers@lists.alioth.debian.org
-    - bigon@debian.org
-    - jbicha@ubuntu.com
+  summary: Basic requirement for icon themes
+  categories:
+    - Graphical desktop/Other
 - repo: apertis_v2027
   subrepo: v2027dev1/target
   srcname: hicolor-icon-theme
@@ -327,18 +324,6 @@
   licenses:
     - GPL-2.0-or-later
 - repo: aur
-  srcname: hicolor-icon-theme-git
-  binname: hicolor-icon-theme-git
-  visiblename: hicolor-icon-theme-git
-  version: 0.18.r2.gf83ba10
-  origversion: 0.18.r2.gf83ba10-1
-  status: rolling
-  summary: Freedesktop.org Hicolor icon theme
-  maintainers:
-    - chocobo1@aur
-  licenses:
-    - GPL-2.0-or-later
-- repo: aur
   srcname: mingw-w64-hicolor-icon-theme
   binname: mingw-w64-hicolor-icon-theme
   visiblename: mingw-w64-hicolor-icon-theme
@@ -350,6 +335,18 @@
     - dinavanengeland@aur
   licenses:
     - GPL
+- repo: aur
+  srcname: hicolor-icon-theme-git
+  binname: hicolor-icon-theme-git
+  visiblename: hicolor-icon-theme-git
+  version: 0.18.r2.gf83ba10
+  origversion: 0.18.r2.gf83ba10-1
+  status: rolling
+  summary: Freedesktop.org Hicolor icon theme
+  maintainers:
+    - chocobo1@aur
+  licenses:
+    - GPL-2.0-or-later
 - repo: artix
   subrepo: world
   srcname: hicolor-icon-theme
@@ -477,22 +474,6 @@
     - GPL-2.0-or-later
   categories:
     - Unspecified
-- repo: pardus_21
-  subrepo: main
-  srcname: hicolor-icon-theme
-  binnames:
-    - hicolor-icon-theme
-  visiblename: hicolor-icon-theme
-  version: "0.17"
-  origversion: 0.17-2
-  status: outdated
-  maintainers:
-    - pkg-gnome-maintainers@lists.alioth.debian.org
-    - bigon@debian.org
-    - jbicha@debian.org
-    - joss@debian.org
-  categories:
-    - misc
 - repo: chimera
   subrepo: main
   srcname: hicolor-icon-theme
@@ -612,6 +593,21 @@
     - joss@debian.org
   categories:
     - misc
+- repo: openkylin_3_0
+  subrepo: huanghe-proposed/main
+  srcname: hicolor-icon-theme
+  binnames:
+    - hicolor-icon-theme
+  visiblename: hicolor-icon-theme
+  version: "0.18"
+  origversion: 0.18-ok1
+  status: newest
+  maintainers:
+    - packaging@lists.openkylin.top
+    - bigon@debian.org
+    - jbicha@ubuntu.com
+  categories:
+    - misc
 - repo: debian_13
   subrepo: trixie/main
   srcname: hicolor-icon-theme
@@ -627,21 +623,15 @@
     - jbicha@ubuntu.com
   categories:
     - misc
-- repo: parrot
-  subrepo: parrot-updates/main
-  srcname: hicolor-icon-theme
-  binnames:
-    - hicolor-icon-theme
+- repo: slackwarearm_15_0
+  subrepo: slackware
+  binname: hicolor-icon-theme
   visiblename: hicolor-icon-theme
-  version: "0.18"
-  origversion: 0.18-2
-  status: newest
+  version: "0.17"
+  origversion: null
+  status: outdated
   maintainers:
-    - pkg-gnome-maintainers@lists.alioth.debian.org
-    - bigon@debian.org
-    - jbicha@ubuntu.com
-  categories:
-    - misc
+    - volkerdi@slackware.com
 - repo: debian_14
   subrepo: forky/main
   srcname: hicolor-icon-theme
@@ -672,20 +662,6 @@
     - jbicha@ubuntu.com
   categories:
     - misc
-- repo: deepin_unstable
-  subrepo: main
-  srcname: hicolor-icon-theme
-  binnames:
-    - hicolor-icon-theme
-  visiblename: hicolor-icon-theme
-  version: "0.17"
-  origversion: 0.17-2
-  status: outdated
-  maintainers:
-    - pkg-gnome-maintainers@lists.alioth.debian.org
-    - bigon@debian.org
-    - jbicha@debian.org
-    - joss@debian.org
 - repo: deepin_23
   subrepo: main
   srcname: hicolor-icon-theme
@@ -835,21 +811,6 @@
     - GPL-2.0-or-later
   categories:
     - Unspecified
-- repo: parrot
-  subrepo: parrot/main
-  srcname: hicolor-icon-theme
-  binnames:
-    - hicolor-icon-theme
-  visiblename: hicolor-icon-theme
-  version: "0.18"
-  origversion: 0.18-2
-  status: newest
-  maintainers:
-    - pkg-gnome-maintainers@lists.alioth.debian.org
-    - bigon@debian.org
-    - jbicha@ubuntu.com
-  categories:
-    - misc
 - repo: fedora_40
   subrepo: release
   srcname: hicolor-icon-theme
@@ -1547,15 +1508,22 @@
     - joss@debian.org
   categories:
     - misc
-- repo: pclinuxos
+- repo: pardus_21
+  subrepo: main
   srcname: hicolor-icon-theme
+  binnames:
+    - hicolor-icon-theme
   visiblename: hicolor-icon-theme
-  version: "0.18"
-  origversion: 0.18-1pclos2026
-  status: newest
-  summary: Basic requirement for icon themes
+  version: "0.17"
+  origversion: 0.17-2
+  status: outdated
+  maintainers:
+    - pkg-gnome-maintainers@lists.alioth.debian.org
+    - bigon@debian.org
+    - jbicha@debian.org
+    - joss@debian.org
   categories:
-    - Graphical desktop/Other
+    - misc
 - repo: openmamba
   subrepo: base
   srcname: hicolor-icon-theme
@@ -1718,6 +1686,21 @@
   summary: Freedesktop.org Hicolor icon theme
   licenses:
     - GPL-2.0-or-later
+- repo: parrot
+  subrepo: parrot/main
+  srcname: hicolor-icon-theme
+  binnames:
+    - hicolor-icon-theme
+  visiblename: hicolor-icon-theme
+  version: "0.18"
+  origversion: 0.18-2
+  status: newest
+  maintainers:
+    - pkg-gnome-maintainers@lists.alioth.debian.org
+    - bigon@debian.org
+    - jbicha@ubuntu.com
+  categories:
+    - misc
 - repo: pisi_main
   subrepo: main
   srcname: desktop/lookandfeel/icon-theme-hicolor
@@ -1790,16 +1773,6 @@
     - joss@debian.org
   categories:
     - misc
-- repo: termux
-  srcname: hicolor-icon-theme
-  binname: hicolor-icon-theme
-  visiblename: hicolor-icon-theme
-  version: "0.18"
-  origversion: null
-  status: newest
-  summary: Freedesktop.org Hicolor icon theme
-  maintainers:
-    - termux@github
 - repo: pureos_byzantium
   subrepo: byzantium/main
   srcname: hicolor-icon-theme
@@ -1998,15 +1971,6 @@
   status: newest
   maintainers:
     - volkerdi@slackware.com
-- repo: slackwarearm_15_0
-  subrepo: slackware
-  binname: hicolor-icon-theme
-  visiblename: hicolor-icon-theme
-  version: "0.17"
-  origversion: null
-  status: outdated
-  maintainers:
-    - volkerdi@slackware.com
 - repo: solus
   srcname: hicolor-icon-theme
   binname: hicolor-icon-theme
@@ -2076,6 +2040,28 @@
     - GPL
   categories:
     - extra/icon
+- repo: termux
+  srcname: hicolor-icon-theme
+  binname: hicolor-icon-theme
+  visiblename: hicolor-icon-theme
+  version: "0.18"
+  origversion: null
+  status: newest
+  summary: Freedesktop.org Hicolor icon theme
+  maintainers:
+    - termux@github
+- repo: ubi_8
+  subrepo: appstream
+  srcname: hicolor-icon-theme
+  visiblename: hicolor-icon-theme
+  version: "0.17"
+  origversion: 0.17-2.el8
+  status: outdated
+  summary: Basic requirement for icon themes
+  licenses:
+    - GPLv2+
+  categories:
+    - Unspecified
 - repo: ubuntu_14_04
   subrepo: trusty/main
   srcname: hicolor-icon-theme
@@ -2093,13 +2079,13 @@
   categories:
     - misc
 - repo: ubuntu_16_04
-  subrepo: xenial/main
+  subrepo: xenial-updates/main
   srcname: hicolor-icon-theme
   binnames:
     - hicolor-icon-theme
   visiblename: hicolor-icon-theme
   version: "0.15"
-  origversion: 0.15-0ubuntu1
+  origversion: 0.15-0ubuntu1.1
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
@@ -2110,13 +2096,13 @@
   categories:
     - misc
 - repo: ubuntu_16_04
-  subrepo: xenial-updates/main
+  subrepo: xenial/main
   srcname: hicolor-icon-theme
   binnames:
     - hicolor-icon-theme
   visiblename: hicolor-icon-theme
   version: "0.15"
-  origversion: 0.15-0ubuntu1.1
+  origversion: 0.15-0ubuntu1
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
